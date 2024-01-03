@@ -1,0 +1,21 @@
+# DATASOURCE
+## H2 ##
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: test
+    password:
+  # JPA - Hibernate
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+# =========================================================
+# = Fabrick Api:
+# =========================================================
+fabrick-api:
+  base-url: https://sandbox.platfr.io
+  auth-schema: S2S
+  api-key: FXOVVXXHVCPVPBZXIJOBGUGSKHDNFRRQJP
+  #id-chiave: 3202
+  #account-id: 14537780
