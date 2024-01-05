@@ -16,5 +16,7 @@ public class FabrickApiProperties {
     private String  authSchema;
     @NotBlank
     private String  apiKey;
+    @NotBlank
+    private String  accountBalancePath;
 
 }

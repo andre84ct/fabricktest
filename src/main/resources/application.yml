@@ -19,3 +19,4 @@ fabrick-api:
   api-key: FXOVVXXHVCPVPBZXIJOBGUGSKHDNFRRQJP
   #id-chiave: 3202
   #account-id: 14537780
+  account-balance-path: /api/gbs/banking/v4.0/accounts/{accountId}/balance
