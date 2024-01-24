@@ -24,7 +24,7 @@ public class FabricktestApplication {
 		printReadyInfos();
 	}
 
-	private static void printReadyInfos() {
+	public static void printReadyInfos() {
 		RuntimeUtils.logRuntimeProperties();
 		log.info(">>> STATUS: [READY]");
 	}

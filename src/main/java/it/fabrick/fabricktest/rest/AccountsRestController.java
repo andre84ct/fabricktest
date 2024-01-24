@@ -51,7 +51,7 @@ public class AccountsRestController {
             @PathVariable("accountId") @NotBlank String accountId
     ) throws Exception {
 
-        log.info(">>> [getAccountBalance][RX]: 'accountId':'{}'", accountId);
+        log.info(">>> [getAccountBalance][START]: 'accountId':'{}'", accountId);
 
         final String url = apiProperties.getBaseUrl() + apiProperties.getAccountBalancePath();
 
@@ -78,7 +78,7 @@ public class AccountsRestController {
             responseStr = JacksonUtils.writeAsString(error);
         }
 
-        log.info("<<< [getAccountBalance][OK]: 'accountId':'{}'", accountId);
+        log.info("<<< [getAccountBalance][END]: 'accountId':'{}'", accountId);
 
         return new ResponseEntity<>(responseStr, status);
 
